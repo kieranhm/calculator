@@ -1,3 +1,8 @@
+:root {
+    --button-width: 62.51px;
+    --button-height: calc(var(--button-width)*1.2);
+}
+
 body {
     padding: 0;
     margin: 0
@@ -14,14 +19,23 @@ body {
 
 .calculator {
     max-width: 250px;
-    margin-bottom: 0
+    margin-bottom: 0;
+}
+
+.text_box {
+    margin: 0;
+    size: 2rem;
 }
 
 .calculator_buttons {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    margin-top: 0;
 }
 
-.text_box {
-    margin: 0
+.calculator_key {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
